@@ -88,7 +88,7 @@ let userData = {
 
 const renderSongs = (array) => {
   const songsHTML = array
-    .map((song)=> {
+    .map((song) => {
       return `
       <li id="song-${song.id}" class="playlist-song">
       <button class="playlist-song-info">
@@ -102,5 +102,5 @@ const renderSongs = (array) => {
       </button>
       </li>
       `;
-    })
+    }).join("");
 };
